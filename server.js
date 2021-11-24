@@ -1,8 +1,11 @@
 let express = require('express')
 let routes = require('./routes/routes.js')
+let path = require('path')
 
 // Create our new Express app.
 let app = express()
+
+app.use(express.static(path.join(__dirname, 'hello-vue', 'dist')))
 
 // Use our routes defined in routes.js.
 app.use('/api', routes)
