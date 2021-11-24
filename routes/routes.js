@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 
-// Define a route to "/".
+// Define a route to "/api". See server.js.
 router.get('/', (req, res, next) => {
     res.json( { "message" : "hello" })
 })
