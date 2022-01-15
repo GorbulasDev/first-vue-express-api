@@ -1,5 +1,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
+  
+  <!-- Pass this to the child component. -->
   <HelloWorld msg="Hello, Web Programmers!"/>
 </template>
 
